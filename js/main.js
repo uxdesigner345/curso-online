@@ -16,7 +16,7 @@
     new WOW().init();
 
 
-    // Sticky Navbar
+    // navegação fixa
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.sticky-top').css('top', '0px');
@@ -26,7 +26,7 @@
     });
     
     
-    // Dropdown on mouse hover
+    // suspensão ao passar o mouse
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
     const $dropdownMenu = $(".dropdown-menu");
@@ -54,7 +54,7 @@
     });
     
     
-    // Back to top button
+    // botão voltar ao topo
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
@@ -68,7 +68,7 @@
     });
 
 
-    // Header carousel
+    // slider carrossel
     $(".header-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
@@ -83,7 +83,7 @@
     });
 
 
-    // Testimonials carousel
+    // carrossel de depoimento
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
